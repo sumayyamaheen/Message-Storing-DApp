@@ -1,0 +1,109 @@
+/* ==== Google Font ==== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* ==== Body ==== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #6b9cff, #0e1549);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* ==== Glass Card ==== */
+.container {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  padding: 35px 50px;
+  width: 420px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+/* ==== Heading ==== */
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ==== Status Text ==== */
+#network {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #d6dafa;
+}
+
+/* ==== Current Message Box ==== */
+#currentMessage {
+  margin: 15px 0 25px 0;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.19);
+  color: #fff;
+}
+
+/* ==== Input Field ==== */
+input {
+  width: 94%;
+  padding: 12px;
+  margin: 8px 0 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+input:focus {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+}
+
+/* ==== Buttons ==== */
+button {
+  padding: 12px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+#setMessageBtn {
+  background: linear-gradient(135deg, #26ffb4, #00b76b);
+  color: #0d2639;
+}
+
+#getMessageBtn {
+  background: linear-gradient(135deg, #ffe86b, #ffb800);
+  color: #0d2639;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* ==== Mobile Responsive ==== */
+@media (max-width: 480px) {
+  .container {
+    width: 85%;
+    padding: 25px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
